@@ -10,9 +10,15 @@ import java.io.IOException;
 import java.util.*;
 
 public class Circuit implements Runnable {
+    /**
+     * 添加的模板的list位置
+     */
     private static final File LIST = FileHelper.create("asset/template/list.json");
     private static Map GUIDE_MAP;
 
+    /**
+     * @return 所有模板的Link集合
+     */
     public static Set<Link> getTemplatesNames() {
         ArrayList<Link> list = new ArrayList<>();
         GUIDE_MAP.forEach((key, value) -> {
@@ -29,6 +35,10 @@ public class Circuit implements Runnable {
         return GUIDE_MAP;
     }
 
+    /**
+     * 先用{@link FileReader}读取文件内容，
+     * 再用{@link Gson}创造Map。
+     */
     @Override
     public void run() {
         try {
