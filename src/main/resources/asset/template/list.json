@@ -1,0 +1,9 @@
+{
+  "minecraft": [
+    "smelting",
+    "blasting"
+  ],
+  "test": [
+    "test"
+  ]
+}
