@@ -3,4 +3,5 @@
 *.iws
 *.iml
 .idea
-/target/
+target
+src/main/java/hlft/violet/Main.java

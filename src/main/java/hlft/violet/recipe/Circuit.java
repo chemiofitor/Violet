@@ -1,8 +1,8 @@
-package hlft.violet.system.recipe;
+package hlft.violet.recipe;
 
 import com.google.gson.Gson;
-import hlft.violet.system.file.FileHelper;
-import hlft.violet.system.resources.Link;
+import hlft.violet.file.FileHelper;
+import hlft.violet.resources.Link;
 
 import java.io.File;
 import java.io.FileReader;
@@ -13,7 +13,7 @@ public class Circuit implements Runnable {
     /**
      * 添加的模板的list位置
      */
-    private static final File LIST = FileHelper.create("asset/template/list.json");
+    private static final File LIST = FileHelper.guide("asset/template/list.json");
     private static Map GUIDE_MAP;
 
     /**

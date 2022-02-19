@@ -1,4 +1,4 @@
-package hlft.violet.system.resources;
+package hlft.violet.resources;
 
 public class Link {
     private final String head;
