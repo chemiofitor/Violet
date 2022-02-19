@@ -1,4 +1,4 @@
-package hlft.violet;
+package hlft.violet.test;
 
 import hlft.violet.file.FileHelper;
 
