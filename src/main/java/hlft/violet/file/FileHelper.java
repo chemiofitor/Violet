@@ -6,7 +6,6 @@ import java.io.File;
 import java.util.Objects;
 
 public class FileHelper {
-
     /**
      * 简易的使用{@link java.io.File}类，其目标必须存在。
      * @param path Resources目录下的相对地址
