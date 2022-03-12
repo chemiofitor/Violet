@@ -2,7 +2,6 @@ package hlft.violet.file;
 
 import com.sun.istack.internal.NotNull;
 
-import java.io.File;
 import java.util.Objects;
 
 public class FileHelper {
@@ -13,5 +12,9 @@ public class FileHelper {
      */
     public static File guide(@NotNull String path) {
         return new File(Objects.requireNonNull(FileHelper.class.getResource("/" + path)).getFile());
+    }
+
+    public static hlft.violet.file.File subGuide(@NotNull FileInterface file, String sub) {
+        return new File(file.getIPath()+"/"+sub);
     }
 }
